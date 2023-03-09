@@ -36,11 +36,11 @@ def run():
 
     #get weather data - note by default the underlying API does not return the date and sorts data by date
     data = weatherData.getWeatherDataFor(latitude, longitude, altitude, startDate, endDate)
-    weatherOutFilePath = filePath + "/../" + "sanramon_weather.csv"
-    data.to_csv(weatherOutFilePath, index=False, encoding="utf-8-sig")
+    #weatherOutFilePath = filePath + "/../" + "sanramon_weather.csv"
+    #data.to_csv(weatherOutFilePath, index=False, encoding="utf-8-sig")
 
     # If need to use static data to avoid API limits. @TODO: Replace with proper mock
-    # data = weatherData.getMockWeatherData(filePath + "/../" + "sanramon_weather.csv");
+    data = weatherData.getMockWeatherData(filePath + "/../" + "sanramon_weather.csv");
 
     # Merge the 2 data sets
     kwhAndWeatherDataFrame = mergeWeatherAndKwhData(kwhCsvDataFrame, data)
@@ -56,6 +56,9 @@ def mergeWeatherAndKwhData(kwhData: pd.DataFrame, weatherData: pd.DataFrame):
 
     Returns : DataFrame of the merged data - Date time, Solar Energy (kWh), tmin, tmax, prcp, snow, wdir, wspd, wpgt, pres, tsun.
     """
+    weatherData.reset_index()
+    print(kwhData)
+    print(weatherData)
     # index needs to be reset. 
     # for future ref: https://stackoverflow.com/questions/35084071/concat-dataframe-reindexing-only-valid-with-uniquely-valued-index-objects
     kwhData.reset_index(inplace=True, drop=True)
@@ -78,11 +81,12 @@ def plotPrecipitationAndKwn(data: pd.DataFrame):
 def runRegression(data: pd.DataFrame):
     x = data[['tmin', 'tmax', 'prcp']].to_numpy()
     y = data['Solar Energy (kWh)'].to_numpy()
-    print(x)
-    print(y)
+    print('x= ', x)
+    print('y= ', y)
 
 data = run()
-runRegression(data)
+plotTempAndKwh(data)
+# runRegression(data)
 
 
 
