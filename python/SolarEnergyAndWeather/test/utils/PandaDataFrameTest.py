@@ -4,7 +4,7 @@ import unittest
 import pandas as pd
 from src.solarroof import CSVReader as csvReader
 
-class PyApisTest(unittest.TestCase):
+class PandaDataFrameTest(unittest.TestCase):
     def tes_DataFrameColumnFormat(self):
         # filePath = "../../data/tesla"
         filePath = "data/"

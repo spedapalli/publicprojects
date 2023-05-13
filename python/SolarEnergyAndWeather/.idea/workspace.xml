@@ -4,20 +4,44 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8971027f-ba40-42a3-b16d-be9affe357b6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="8971027f-ba40-42a3-b16d-be9affe357b6" name="Changes" comment="Minor changes with data files updated from recent runs. still working on a bug in merging CSV files">
+      <change afterPath="$PROJECT_DIR$/.idea/ChatGPTCopilotChannelManager.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CommonConstants.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/charts/GenericPlotter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/charts/SeabornCharts.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/charts/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ml/LinearRegressionModel.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ml/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/solarroof/SolarRoofConstants.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/weatherdata/WeatherDataConstants.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/utils/SeabornLIbraryTest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/utils/sanramon_weather_202209.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/utils/solar_consolidated.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/consolidated/SolarKwhWithWeather.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/consolidated/SolarKwhWithWeather.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/sanramon_weather.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/sanramon_weather.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/environment.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/solar_consolidated.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/solar_consolidated.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/solarroof/CSVReader.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/solarroof/CSVReader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/weatherdata/WeatherDataReader.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/weatherdata/WeatherDataReader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/MainTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/MainTest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/utils/MeteostatApiTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/utils/MeteostatApiTest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/utils/PandaDataFrameTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/utils/PandaDataFrameTest.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Unit Test" />
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -37,11 +61,17 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/Users/sambapedapalli/code/publicprojects/python/SolarEnergyAndWeather",
-    "settings.editor.selected.configurable": "configurable.group.project"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "/Users/sambapedapalli/code/publicprojects/python/SolarEnergyAndWeather/test/utils/data",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/test/utils/data" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.main">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="SolarEnergyAndWeather" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -63,9 +93,109 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="pytest for MeteostatApiTest.PandaDataFrameTest" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="SolarEnergyAndWeather" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test/utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;MeteostatApiTest.PandaDataFrameTest&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for MeteostatApiTest.PandaDataFrameTest.test_GetHourlyData" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="SolarEnergyAndWeather" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test/utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;MeteostatApiTest.PandaDataFrameTest.test_GetHourlyData&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for SeabornLIbraryTest.MyTestCase.test_something" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="SolarEnergyAndWeather" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test/utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;SeabornLIbraryTest.MyTestCase.test_something&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test.utils.PandaDataFrameTest" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="SolarEnergyAndWeather" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test/utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test.utils.PandaDataFrameTest&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test.utils.PandaDataFrameTest" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="SolarEnergyAndWeather" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test/utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test.utils.PandaDataFrameTest&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest in SeabornLIbraryTest.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="SolarEnergyAndWeather" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test/utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/utils/SeabornLIbraryTest.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
+        <item itemvalue="Python tests.pytest for SeabornLIbraryTest.MyTestCase.test_something" />
+        <item itemvalue="Python tests.pytest in SeabornLIbraryTest.py" />
+        <item itemvalue="Python tests.pytest for MeteostatApiTest.PandaDataFrameTest" />
+        <item itemvalue="Python tests.pytest for MeteostatApiTest.PandaDataFrameTest.test_GetHourlyData" />
       </list>
     </recent_temporary>
   </component>
@@ -78,17 +208,21 @@
       <option name="presentableId" value="Default" />
       <updated>1677637593123</updated>
     </task>
+    <task id="LOCAL-00001" summary="Minor changes with data files updated from recent runs. still working on a bug in merging CSV files">
+      <created>1678342719367</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1678342719367</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/main.py</url>
-          <line>65</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.csv" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Minor changes with data files updated from recent runs. still working on a bug in merging CSV files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Minor changes with data files updated from recent runs. still working on a bug in merging CSV files" />
   </component>
 </project>
