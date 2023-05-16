@@ -1,12 +1,13 @@
 import unittest
 import src.main as main
+import src.solarroof
 import pandas as pd
 
 # https://docs.python.org/3/library/unittest.html
 
 class MainTest(unittest.TestCase):
 
-    def mergeWeatherAndKwhData(self):
+    def test_mergeWeatherAndKwhData(self):
         filePath = "../data/tesla"
 
         # to test pd.concat and dropping of index
