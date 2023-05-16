@@ -95,8 +95,8 @@ def mergeWeatherAndKwhDataUsingRowNumAsIndex(kwhData: pd.DataFrame, weatherData:
     consolidatedCsv.to_csv(commonConstants.DATA_ROOT_DIR + commonConstants.CONSOLIDATED_FILENAME)
     return consolidatedCsv
 
+
 print(os.path.abspath(os.curdir))
-print("Tesla data dir= ", commonConstants.DATA_ROOT_DIR + solarConstants.TESLA_SOLAR_DATA_DIR)
 data = run(commonConstants.DATA_ROOT_DIR + solarConstants.TESLA_SOLAR_DATA_DIR)
 # plotTempAndKwh(data)
 # plotLinearRegressionLine(data)

@@ -4,11 +4,13 @@ from statsmodels import stats
 import numpy as np
 from sklearn.linear_model import LinearRegression
 
+from src.weatherdata import WeatherDataConstants as weatherConstants
+from src.solarroof import SolarRoofConstants as solarConstants
 
 def plotLinearRegressionLine(data: pd.DataFrame):
     # create arrays of data composing independent vars and dependent vars
-    x = data['prcp'].to_numpy()
-    y = data['Solar Energy (kWh)'].to_numpy()
+    x = data[weatherConstants.PRECIPITATION].to_numpy()
+    y = data[solarConstants.SOLAR_ENERGY_KWH].to_numpy()
 
     # scatter plot
     plt.plot(x, y, 'o')
@@ -21,8 +23,8 @@ def plotLinearRegressionLine(data: pd.DataFrame):
 
 def runRegression(data: pd.DataFrame):
     # create arrays of data composing independent vars and dependent vars
-    x = data[['tmin', 'tmax', 'prcp']].to_numpy()
-    y = data['Solar Energy (kWh)'].to_numpy()
+    x = data[[weatherConstants.TEMP_MIN, weatherConstants.TEMP_MAX, weatherConstants.PRECIPITATION]].to_numpy()
+    y = data[solarConstants.SOLAR_ENERGY_KWH].to_numpy()
     print('x= ', x)
     print('y= ', y)
 
